@@ -330,7 +330,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
   Color _voiceColor = Colors.black;
   int _currentPartIndex = 0;
 
-  ScrollController _textScrollController = ScrollController();
+  final ScrollController _textScrollController = ScrollController();
 
   List<String> get textParts {
     final words = widget.text.split(RegExp(r'[.,?!:;-]'));
@@ -455,7 +455,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
       print(nextPartOffset);
       _textScrollController.animateTo(
         nextPartOffset,
-        duration: Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
         curve: Curves.easeInOut,
       );
     }
