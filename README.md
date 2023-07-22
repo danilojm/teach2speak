@@ -1,4 +1,4 @@
-# teach2speek
+# teach2speak
 
 A new Flutter project.
 

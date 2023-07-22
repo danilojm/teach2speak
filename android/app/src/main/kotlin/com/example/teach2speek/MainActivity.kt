@@ -1,4 +1,4 @@
-package com.example.teach2speek
+package com.example.teach2speak
 
 import io.flutter.embedding.android.FlutterActivity
 
